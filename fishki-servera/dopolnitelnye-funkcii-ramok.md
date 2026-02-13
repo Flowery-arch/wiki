@@ -20,3 +20,9 @@ icon: crop-simple
 Превратить обычную рамку в светящуюся можно, кликнув **SHIFT+ПКМ** по ней **светящимся чернильным мешочком**.
 
 <figure><img src="../.gitbook/assets/гифка с светящейся хуетой.gif" alt=""><figcaption></figcaption></figure>
+
+## Сделать рамку невидимой
+
+Что-бы сделать рамку невидимой, кликните **SHIFT+ПКМ** по ней **ножницами**
+
+<figure><img src="../.gitbook/assets/2026-02-13 20-12-16_1.gif" alt=""><figcaption></figcaption></figure>
