@@ -42,7 +42,7 @@ icon: circle-dollar
 2. Откройте вкладку «Настройки»
 3. Включите нужные тоглы
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
