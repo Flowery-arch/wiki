@@ -4,9 +4,9 @@
 
 * [Добро Пожаловать!](README.md)
   * [Краткий - Гайд](informaciya-flw.onl/dobro-pozhalovat/kratkii-gaid.md)
-  * [Правила](informaciya-flw.onl/dobro-pozhalovat/pravila/README.md)
-    * [О политике сервера и наказаниях](informaciya-flw.onl/dobro-pozhalovat/pravila/o-politike-servera-i-nakazaniyakh.md)
-    * [Правила Мап-Артов и картинw](informaciya-flw.onl/dobro-pozhalovat/pravila/pravila-map-artov-i-kartinw.md)
+* [Правила](informaciya-flw.onl/pravila/README.md)
+  * [О политике сервера и наказаниях](informaciya-flw.onl/pravila/o-politike-servera-i-nakazaniyakh.md)
+  * [Правила Мап-Артов и картинw](informaciya-flw.onl/pravila/pravila-map-artov-i-kartinw.md)
 
 ## Услуги, возможности
 
