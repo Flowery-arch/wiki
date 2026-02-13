@@ -25,6 +25,7 @@
 
 ## Фишки-Сервера
 
+* [Быстрое переделование бетона](fishki-servera/bystroe-peredelovanie-betona.md)
 * [Бравери](fishki-servera/braveri/README.md)
   * [Рецепты](fishki-servera/braveri/recepty.md)
 * [Дополнительные функции рамок](fishki-servera/dopolnitelnye-funkcii-ramok.md)
