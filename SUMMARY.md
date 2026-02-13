@@ -14,6 +14,7 @@
 ## Услуги, возможности
 
 * [Модификации](uslugi-vozmozhnosti/modifikacii.md)
+* [Анти-Гриф](uslugi-vozmozhnosti/anti-grif.md)
 
 ## Команда проекта
 
