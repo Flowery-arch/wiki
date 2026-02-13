@@ -10,6 +10,7 @@
 
 ## Услуги, возможности
 
+* [Донат эффекты](uslugi-vozmozhnosti/donat-effekty.md)
 * [Модификации](uslugi-vozmozhnosti/modifikacii.md)
 * [Анти-Гриф](uslugi-vozmozhnosti/anti-grif.md)
 * [Спонсорство](uslugi-vozmozhnosti/sponsorstvo.md)
