@@ -1,21 +1,20 @@
 # Table of contents
 
-* [Добро Пожаловать!](README.md)
-  * [Краткий - Гайд](dobro-pozhalovat/kratkii-gaid.md)
-
 ## Информация FLW.ONL
 
-* [Правила](informaciya-flw.onl/pravila/README.md)
-  * [О политике сервера и наказаниях](informaciya-flw.onl/pravila/o-politike-servera-i-nakazaniyakh.md)
-  * [Правила Мап-Артов и картинw](informaciya-flw.onl/pravila/pravila-map-artov-i-kartinw.md)
-* [911](informaciya-flw.onl/911.md)
-* [Команды и чат](informaciya-flw.onl/komandy-i-chat.md)
+* [Добро Пожаловать!](README.md)
+  * [Краткий - Гайд](informaciya-flw.onl/dobro-pozhalovat/kratkii-gaid.md)
+  * [Правила](informaciya-flw.onl/dobro-pozhalovat/pravila/README.md)
+    * [О политике сервера и наказаниях](informaciya-flw.onl/dobro-pozhalovat/pravila/o-politike-servera-i-nakazaniyakh.md)
+    * [Правила Мап-Артов и картинw](informaciya-flw.onl/dobro-pozhalovat/pravila/pravila-map-artov-i-kartinw.md)
 
 ## Услуги, возможности
 
 * [Модификации](uslugi-vozmozhnosti/modifikacii.md)
 * [Анти-Гриф](uslugi-vozmozhnosti/anti-grif.md)
 * [Спонсорство](uslugi-vozmozhnosti/sponsorstvo.md)
+* [911](uslugi-vozmozhnosti/911.md)
+* [Команды и чат](uslugi-vozmozhnosti/komandy-i-chat.md)
 
 ## Команда проекта
 
