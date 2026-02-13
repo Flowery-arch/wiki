@@ -15,6 +15,7 @@
 
 * [Модификации](uslugi-vozmozhnosti/modifikacii.md)
 * [Анти-Гриф](uslugi-vozmozhnosti/anti-grif.md)
+* [Спонсорство](uslugi-vozmozhnosti/sponsorstvo.md)
 
 ## Команда проекта
 

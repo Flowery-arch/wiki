@@ -57,7 +57,7 @@ icon: bottle-droplet
 
 1.Поставьте бутылку с ферментом в стойку для варки. 2.Добавьте светокаменную пыль в качестве фильтра в верхний слот стойки для варки (фильтр не будет израсходован).
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 После дистилляции вы получите более крепкий напиток или уникальный эффект
 
