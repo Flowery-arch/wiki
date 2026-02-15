@@ -22,8 +22,8 @@ icon: book
 Ждём тебя в игре! Команда **FLW.ONL**
 
 {% hint style="success" %}
-А**йпи сервера:** `mc.flowerymc.online`\
-**Доступные версии для захода: 1.21.7-1.21.8**
+А**йпи сервера:** `mc.flowerymc.space`\
+**Доступные версии для захода: 1.21.11**
 {% endhint %}
 
 ### ▌Первый заход на сервер <a href="#pervyi-zakhod-na-server" id="pervyi-zakhod-na-server"></a>

@@ -25,7 +25,7 @@ Flw.Onl — сервер, где главное это люди, а не гри�
 
 ### <img src="https://wiki.zeroworlds.ru/~gitbook/image?url=https%3A%2F%2F257435564-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F4VXgTv58YZtW1foURE3G%252Fuploads%252FRrQiZ0sn0rZYedhJBsJZ%252Fimage.png%3Falt%3Dmedia%26token%3D837d4d5e-5811-4347-b624-de2c2974bcf0&#x26;width=40&#x26;dpr=4&#x26;quality=100&#x26;sign=36e2e223&#x26;sv=2" alt="" data-size="line"> Основная информация <img src="https://wiki.zeroworlds.ru/~gitbook/image?url=https%3A%2F%2F257435564-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F4VXgTv58YZtW1foURE3G%252Fuploads%252FRrQiZ0sn0rZYedhJBsJZ%252Fimage.png%3Falt%3Dmedia%26token%3D837d4d5e-5811-4347-b624-de2c2974bcf0&#x26;width=40&#x26;dpr=4&#x26;quality=100&#x26;sign=36e2e223&#x26;sv=2" alt="" data-size="line"> <a href="#osnovnaya-informaciya" id="osnovnaya-informaciya"></a>
 
-> **Айпи:** mc.flowerymc.online **Версия:** 1.21.11
+> **Айпи:** mc.flowerymc.space **Версия:** 1.21.11
 >
 > Сервер **Java**, пиратский
 >
