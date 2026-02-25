@@ -28,7 +28,7 @@ icon: microphone
 
 |                                                                                                                                        |                                                                                            |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [Simple Voice Chat](https://modrinth.black/mod/simple-voice-chat)                                                                      | Мод на голосовой чат, позволяющий общаться с другими игроками непосредственно в Minecraft. |
+| [Simple Voice Chat](https://modrinth.black/mod/simple-voice-chat) или [Plasmo Voice](https://modrinth.black/mod/plasmo-voice)          | Мод на голосовой чат, позволяющий общаться с другими игроками непосредственно в Minecraft. |
 | [EmoteCraft](https://modrinth.black/mod/emotecraft) _(1.20x)_ или [NoEmoteCraft](https://modrinth.black/plugin/noemotecraft) _(1.21x)_ | Мод на эмоции, дающий возможность демонстрировать различные анимации и эмоции в игре.      |
 | [Fabric-api](https://modrinth.black/mod/fabric-api)                                                                                    | Базовый мод, необходимый для работы всех модификаций, использующих платформу Fabric.       |
 

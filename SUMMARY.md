@@ -14,7 +14,6 @@
 * [Модификации](uslugi-vozmozhnosti/modifikacii.md)
 * [Анти-Гриф](uslugi-vozmozhnosti/anti-grif.md)
 * [Спонсорство](uslugi-vozmozhnosti/sponsorstvo.md)
-* [911](uslugi-vozmozhnosti/911.md)
 * [Команды и чат](uslugi-vozmozhnosti/komandy-i-chat.md)
 
 ## Команда проекта
@@ -27,16 +26,9 @@
 
 ## Фишки-Сервера
 
-* [Быстрое переделование бетона](fishki-servera/bystroe-peredelovanie-betona.md)
+* [Крафты и мелкие фишки](fishki-servera/krafty-i-melkie-fishki.md)
 * [Бравери](fishki-servera/braveri/README.md)
   * [Рецепты](fishki-servera/braveri/recepty.md)
-* [Дополнительные функции рамок](fishki-servera/dopolnitelnye-funkcii-ramok.md)
-* [Теги карт](fishki-servera/tegi-kart.md)
-* [Обработка дерева в камнерезе](fishki-servera/obrabotka-dereva-v-kamnereze.md)
-
-## Полезные ссылки
-
-* [Page 1](poleznye-ssylki/page-1.md)
 
 ***
 
