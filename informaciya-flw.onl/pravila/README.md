@@ -193,7 +193,7 @@ coverY: 0
 
 &#x20;    8.2.10 Packet exploits
 
-&#x20;    8.2.11 AutoClicker (боевой)
+&#x20;    8.2.11 AutoClicker
 
 &#x20;    8.2.12 Baritone и любые боты
 
