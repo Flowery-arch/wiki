@@ -5,7 +5,7 @@ icon: microphone
 # Модификации
 
 {% hint style="info" %}
-[Список запрещенных модов находится в правилах](https://wiki.flowerymc.online/informaciya-flw.onl/pravila#id-5.-zapreshennye-modifikacii).
+[Список запрещенных модов находится в правилах](../informaciya-flw.onl/pravila/README.md).
 {% endhint %}
 
 ### ▌Модпак сервера <a href="#modpak-servera" id="modpak-servera"></a>
