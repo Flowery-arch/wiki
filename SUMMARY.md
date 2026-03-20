@@ -32,8 +32,7 @@
 
 ***
 
-* [Сайт](https://flowerymc.space/)
+* [Сайт](https://flowerymc.online/)
 * [Наш Discord](https://discord.com/invite/gVd9mR2XqM)
-* [Telegram](https://t.me/flowerymctg)
-* [TikTok](https://www.tiktok.com/@flw.onl.mc_off?lang=en)
+* [Наш Telegram](https://t.me/flwonline)
 * [HotMC](https://hotmc.ru/minecraft-server-284739)
