@@ -15,6 +15,7 @@
 * [Анти-Гриф](uslugi-vozmozhnosti/anti-grif.md)
 * [Спонсорство](uslugi-vozmozhnosti/sponsorstvo.md)
 * [Команды и чат](uslugi-vozmozhnosti/komandy-i-chat.md)
+* [Города, профиль и репутация](uslugi-vozmozhnosti/goroda-profil-i-reputaciya.md)
 
 ## Команда проекта
 
