@@ -6,8 +6,8 @@ icon: desktop
 
 Наш сервер работает на мощном оборудовании, чтобы обеспечить стабильную производительность даже при большом количестве игроков (за сезон нас посетило более 3500 человек!).
 
-* **Процессор**: AMD Ryzen 9 9950X, разогнан до 5.7 ГГц с водяным охлаждением.
-* **Оперативная память**: 64 ГБ.
+* **Процессор**: AMD R9 7950X3D.
+* **Оперативная память**: 32 ГБ.
 * **Хранилище**: 500 Гб NVMe SSD от Samsung.
 * **Операционная система**: Debian 11.
 * **Местоположение**: Германия
@@ -18,20 +18,26 @@ icon: desktop
 
 ***
 
+Понимаю, сейчас приведу текст “под твою конфигурацию” и аккуратно учту lobotomize. Ниже: **копируемые блоки только для конфигов**, остальное — обычным текстом.
+
+***
+
 **Ядро сервера**\
-Мы используем **Purpur** — оптимизированное ядро, сочетающее производительность и ванильное поведение. Настройки ниже относятся ко всем мирам.
+Используем Purpur. Настройки ниже применяются ко всем мирам, если не переопределены отдельно в `world*/paper-world.yml`.
 
 **Ограничения по мобам**\
-Ограничения задаются **не по чанкам**, а по категории мобов и игроку (per‑player mob caps). Лимиты ниже — это глобальные лимиты спавна на игрока.
+Используются **per‑player mob caps** (на игрока), а не лимиты по чанкам.\
+Если строите фермы — следите, чтобы не копить большие стаки мобов в одном чанке.
 
-**Особенности работы с жителями**\
-Лоботомия отключена, чтобы жители вели себя ванильно: **боялись зомби** и **нормально бегали к кроватям**.
+**Жители и lobotomize**\
+Встроенный `lobotomize` в Purpur **выключен**, чтобы жители нормально паниковали от зомби и работали голем‑фермы.\
+Для торговых залов используем плагин **VillagerLobotimizer**: он лоботомизирует “зажатых” жителей, но торговля работает.
 
 ***
 
 **bukkit.yml**
 
-```yml
+```yaml
 spawn-limits:
   monsters: 20
   animals: 5
@@ -52,10 +58,10 @@ ticks-per:
 
 **spigot.yml**
 
-```yml
+```yaml
 world-settings:
   default:
-    hanging-tick-frequency: 200
+    hanging-tick-frequency: 1200
     arrow-despawn-rate: 300
     trident-despawn-rate: 1200
     mob-spawn-range: 3
@@ -67,18 +73,35 @@ world-settings:
       water: 8
       villagers: 32
       flying-monsters: 48
-    tick-inactive-villagers: true
+      wake-up-inactive:
+        animals-max-per-tick: 2
+        animals-every: 4000
+        animals-for: 40
+        monsters-max-per-tick: 4
+        monsters-every: 400
+        monsters-for: 60
+        villagers-max-per-tick: 4
+        villagers-every: 600
+        villagers-for: 100
+        flying-monsters-max-per-tick: 2
+        flying-monsters-every: 200
+        flying-monsters-for: 60
+      villagers-work-immunity-after: 100
+      villagers-work-immunity-for: 20
+      villagers-active-for-panic: true
+      tick-inactive-villagers: true
     entity-tracking-range:
       players: 128
       animals: 48
       monsters: 48
       misc: 32
+      display: 64
       other: 64
 ```
 
 **paper-global.yml**
 
-```yml
+```yaml
 item-validation:
   book-size:
     page-max: 1280
@@ -91,7 +114,7 @@ unsupported-settings:
 
 **paper-world-defaults.yml**
 
-```yml
+```yaml
 chunks:
   auto-save-interval: 6000
   delay-chunk-unloads-by: 10s
@@ -139,6 +162,24 @@ entities:
     iron-golems-can-spawn-in-air: false
     non-player-arrow-despawn-rate: 400
     per-player-mob-spawns: true
+  spawning:
+    alt-item-despawn-rate:
+      enabled: true
+      items:
+        andesite: 1200
+        cobbled_deepslate: 1200
+        cobblestone: 1200
+        diorite: 1200
+        dirt: 1200
+        granite: 1200
+        gravel: 1200
+        netherrack: 1200
+        egg: 600
+        feather: 600
+        wheat_seeds: 600
+        pumpkin_seeds: 600
+        melon_seeds: 600
+        beetroot_seeds: 600
 fixes:
   disable-unloaded-chunk-enderpearl-exploit: true
   fix-curing-zombie-villager-discount-exploit: true
@@ -161,6 +202,17 @@ tick-rates:
       secondarypoisensor: 40
 unsupported-settings:
   fix-invulnerable-end-crystal-exploit: true
+```
+
+**world\_nether/paper-world.yml (только АД)**
+
+```yaml
+spawning:
+  alt-item-despawn-rate:
+    enabled: true
+    items:
+      golden_sword: 600
+      rotten_flesh: 600
 ```
 
 ***
