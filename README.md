@@ -14,16 +14,13 @@ metaLinks: {}
 **Важная информация перед началом игры!**
 
 * На сервере включены глобальный и локальный чаты. Чтобы писать в глобальный чат, поставьте `!` перед сообщением
-* Сундуки в данжах имеют [новый функционал](https://flowerymc.space/wiki/fishki-servera~krafty-i-melkie-fishki)
-* Способ получения элитр [изменён](https://world-viewpoint.gitbook.io/wiki/igrovye-mekhaniki/osobennosti/poluchenie-elitr)!
-* Также всем игрокам доступна проверка блоков на взаимодействие игроков командой [`/co i`](https://world-viewpoint.gitbook.io/wiki/igrovye-mekhaniki/inspektor-vzaimodeistvii)
 {% endhint %}
 
-{% hint style="success" icon="square-right" %}
+{% hint style="success" %}
 [Подключение](https://flowerymc.space/wiki/informaciya-flw.onl~dobro-pozhalovat~kratkii-gaid)
 {% endhint %}
 
-{% hint style="success" icon="map-location-dot" %}
+{% hint style="success" %}
 [Online карта сервера](https://flowerymc.space/wiki/informaciya-flw.onl~dobro-pozhalovat~kratkii-gaid)
 {% endhint %}
 
