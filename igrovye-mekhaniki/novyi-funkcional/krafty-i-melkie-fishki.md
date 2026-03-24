@@ -46,7 +46,7 @@ icon: cube
 
 Обычный **глубинный сланец** можно переработать в камнерезе в **колотый глубинный сланец**.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Работает и обратная переработка: **колотый глубинный сланец** можно вернуть обратно в **обычный глубинный сланец** через камнерез.
@@ -68,7 +68,7 @@ icon: cube
 
 Если бросить **сухой бетон** в **котёл с водой**, он сразу станет обычным бетоном.
 
-<figure><img src="../.gitbook/assets/2026-02-13 20-12-16_3.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2026-02-13 20-12-16_3.gif" alt=""><figcaption></figcaption></figure>
 
 Это особенно удобно, если нужно быстро перекрасить большое количество блоков без ручной раскладки.
 
@@ -93,24 +93,24 @@ icon: cube
 * искажённые стебли
 * бамбук
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Что можно получить
 
-| Исходный блок | Результат |
-| --- | --- |
-| Бревно, древесина, обтёсанные варианты, стебли Незера, гифы и бамбуковый блок | `4` доски соответствующего типа |
-| Доски | `2` плиты |
-| Доски | `1` ступенька |
-| Доски | `1` забор |
-| Доски | `1` калитка |
-| Доски | `1` дверь |
-| Доски | `1` люк |
-| Доски | `1` нажимная плита |
-| Доски | `1` кнопка |
-| Бамбуковые доски | `1` бамбуковая мозаика |
-| Бамбуковая мозаика | `2` плиты из бамбуковой мозаики |
-| Бамбуковая мозаика | `1` ступенька из бамбуковой мозаики |
+| Исходный блок                                                                 | Результат                           |
+| ----------------------------------------------------------------------------- | ----------------------------------- |
+| Бревно, древесина, обтёсанные варианты, стебли Незера, гифы и бамбуковый блок | `4` доски соответствующего типа     |
+| Доски                                                                         | `2` плиты                           |
+| Доски                                                                         | `1` ступенька                       |
+| Доски                                                                         | `1` забор                           |
+| Доски                                                                         | `1` калитка                         |
+| Доски                                                                         | `1` дверь                           |
+| Доски                                                                         | `1` люк                             |
+| Доски                                                                         | `1` нажимная плита                  |
+| Доски                                                                         | `1` кнопка                          |
+| Бамбуковые доски                                                              | `1` бамбуковая мозаика              |
+| Бамбуковая мозаика                                                            | `2` плиты из бамбуковой мозаики     |
+| Бамбуковая мозаика                                                            | `1` ступенька из бамбуковой мозаики |
 
 {% hint style="info" %}
 Это распространяется и на новые типы дерева, включая **cherry**, **pale oak** и бамбуковые варианты.
@@ -122,7 +122,7 @@ icon: cube
 
 Из **1 блока шерсти** любого цвета можно получить **4 нити**.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -133,7 +133,7 @@ icon: cube
 * **9 ковров из мха** -> **1 блок мха**
 * **9 блоков мха** -> **1 ковёр из мха**
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -147,7 +147,7 @@ icon: cube
 
 Если нажать **Shift + ПКМ** по рамке **пчелиными сотами**, рамка заблокируется от случайного поворота.
 
-<figure><img src="../.gitbook/assets/гивка с сотами.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/гивка с сотами.gif" alt=""><figcaption></figcaption></figure>
 
 Важно:
 
@@ -158,7 +158,7 @@ icon: cube
 
 Если нажать **Shift + ПКМ** по обычной рамке **светящимся чернильным мешком**, она превратится в **светящуюся рамку**.
 
-<figure><img src="../.gitbook/assets/гифка с светящейся хуетой.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/гифка с светящейся хуетой.gif" alt=""><figcaption></figcaption></figure>
 
 При этом сохраняются:
 
@@ -172,7 +172,7 @@ icon: cube
 
 Если нажать **Shift + ПКМ** по рамке **ножницами**, рамка станет невидимой.
 
-<figure><img src="../.gitbook/assets/2026-02-13 20-12-16_1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2026-02-13 20-12-16_1.gif" alt=""><figcaption></figcaption></figure>
 
 Важно:
 
@@ -194,19 +194,19 @@ icon: cube
 * на верстаке;
 * на столе картографа.
 
-<figure><img src="../.gitbook/assets/2026-01-10 23-23-12_1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2026-01-10 23-23-12_1.gif" alt=""><figcaption></figcaption></figure>
 
 ### Тег `#invframe`
 
 Тег `#invframe` делает рамку невидимой, когда карта вставляется в неё.
 
-<figure><img src="../.gitbook/assets/2026-01-10 23-23-12.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2026-01-10 23-23-12.gif" alt=""><figcaption></figcaption></figure>
 
 ### Тег `#author`
 
 Тег `#author` добавляет в описание карты имя её автора.
 
-<figure><img src="../.gitbook/assets/2026-01-10 23-23-12_2.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2026-01-10 23-23-12_2.gif" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Теги можно совмещать между собой. Например: `Карта #author #nocopy`.

@@ -1,7 +1,5 @@
 ---
-description: Незнание правил не освобождает от ответственности!
-icon: clipboard-list
-coverY: 0
+icon: book-open
 ---
 
 # Правила

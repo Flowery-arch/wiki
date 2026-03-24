@@ -1,19 +1,18 @@
 ---
-description: Мы не продаем победу, мы позволяем спонсировать.
-icon: circle-dollar
+icon: star-shooting
 ---
 
-# Спонсорство
+# Функционал FLW+
 
 На сервере есть система спонсорских подписок, названная FLW+ и прошедшая с сервером со самого старта до текущих дней, её эффективность и баланс доказаны временем и опытом, наш сервер старается удерживать баланс между донатами и получаемой игровой выгодой, чтобы оставлять игру интересной и честной на столько, дабы это не портило игровой опыт других игроков сервера.
 
 Благодаря вашей поддержке мы можем поддерживать работоспособность сервера, оплачивать рекламу и покупать плагины на сервере, сейчас ни один сервер не обходится без системы подписок и внутриигрового доната благодаря которому, мы можем не зависеть от посторонних спонсоров и полностью отдаваться своему любимому делу ради вашего комфорта.
 
-### Система подписок [FLW+](https://flowerymc.online/wallet) <a href="#sistema-podpisok-weority-actually-i-ultimate" id="sistema-podpisok-weority-actually-i-ultimate"></a>
+### Система подписок [FLW+](https://flowerymc.space/wallet) <a href="#sistema-podpisok-weority-actually-i-ultimate" id="sistema-podpisok-weority-actually-i-ultimate"></a>
 
 Мы представляем вам подписку на проекте, входящие в семейство FLW, соответственно имеющие свои особенные права, которые не влияют на геймплей, давая исключительно косметический или фановый опыт игры. Давайте разберём подписку, кратко пройдясь по списку получаемых прав. Вы ознакомитесь с актуальным списком прав и ценами, в случае если вам понравится, будем надеятся что вы сможете поддержать проект подходяшей для вас подпиской:
 
-#### Лучшая и единственная — [FLW+](https://flowerymc.online/wallet) <a href="#luchshaya-i-edinstvennaya-actually" id="luchshaya-i-edinstvennaya-actually"></a>
+#### Лучшая и единственная — [FLW+](https://flowerymc.space/wallet) <a href="#luchshaya-i-edinstvennaya-actually" id="luchshaya-i-edinstvennaya-actually"></a>
 
 Вот готовый текст для вставки:
 
@@ -42,9 +41,9 @@ icon: circle-dollar
 2. Откройте вкладку «Настройки»
 3. Включите нужные тоглы
 
-<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Цены FLW+:**
 
