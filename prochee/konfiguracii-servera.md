@@ -1,102 +1,113 @@
 ---
+description: Конфигурация сервера
 icon: desktop
 ---
 
 # Конфигурации сервера
 
-Наш сервер работает на мощном оборудовании, чтобы обеспечить стабильную производительность даже при большом количестве игроков (за сезон нас посетило более 3500 человек!).
+**Конфигурация сервера**
 
-* **Процессор**: AMD EPYC 7282.
-* **Оперативная память**: 48 ГБ.
-* **Хранилище**: 500 Гб NVMe SSD от Samsung.
-* **Операционная система**: Debian 11.
-* **Местоположение**: Германия
+Наш сервер работает на производительном оборудовании, чтобы обеспечивать стабильную работу даже при высоком онлайне.
 
-***
+**Процессор:** AMD Ryzen 9 9950x3D
 
-**Ядро сервера**\
-Используем Purpur. Настройки ниже применяются ко всем мирам, если не переопределены отдельно в `world*/paper-world.yml`.
+**Оперативная память:** 64 ГБ.
 
-**Ограничения по мобам**\
-Используются **per‑player mob caps** (на игрока), а не лимиты по чанкам.\
-Если строите фермы — следите, чтобы не копить большие стаки мобов в одном чанке.
+**Хранилище:** 2 x 476.9 ГБ NVMe SSD от Samsung&#x20;
 
-**Жители и lobotomize**\
-Встроенный `lobotomize` в Purpur **выключен**, чтобы жители нормально паниковали от зомби и работали голем‑фермы.\
-Для торговых залов используем плагин **VillagerLobotimizer**: он лоботомизирует “зажатых” жителей, но торговля работает.
+**Операционная система:** Ubuntu 22.04.5 LTS.
 
-***
+**Ядро Linux:** 5.15.0-164-generic.
 
-**bukkit.yml**
+**Ядро сервера**
 
-```yaml
+Мы используем **DivineMC** с конфигурациями **Paper**, **Spigot**, **Bukkit** и **Purpur**. Это даёт хорошую производительность, совместимость с плагинами и гибкую настройку поведения сервера.&#x20;
+
+bukkit.yml
+
+```yml
 spawn-limits:
-  monsters: 20
-  animals: 5
-  water-animals: 2
-  water-ambient: 2
-  water-underground-creature: 3
-  axolotls: 3
-  ambient: 1
+  monsters: 35
+  animals: 8
+  water-animals: 15
+  water-ambient: 5
+  water-underground-creature: 5
+  axolotls: 5
+  ambient: 15
 ticks-per:
+  monster-spawns: 6
   animal-spawns: 400
-  monster-spawns: 10
-  water-spawns: 100
-  water-ambient-spawns: 400
-  water-underground-creature-spawns: 400
-  axolotl-spawns: 400
-  ambient-spawns: 400
+  water-spawns: 12
+  water-ambient-spawns: 12
+  water-underground-creature-spawns: 12
+  axolotl-spawns: 12
+  ambient-spawns: 12
 ```
 
-**spigot.yml**
+Ограничения по мобам Используются `per-player mob spawns`, то есть спавн масштабируется на игрока, а не только на мир целиком. Это даёт более честное распределение мобов между игроками, но при большом онлайне эффективность отдельных ферм может отличаться от “одиночной” ванили.
 
-```yaml
+spigot.yml
+
+```yml
 world-settings:
   default:
     hanging-tick-frequency: 1200
-    arrow-despawn-rate: 300
+    arrow-despawn-rate: 1200
     trident-despawn-rate: 1200
     mob-spawn-range: 3
     entity-activation-range:
-      animals: 24
-      monsters: 24
-      raiders: 48
-      misc: 8
-      water: 8
+      animals: 32
+      monsters: 32
+      raiders: 12
+      misc: 16
+      water: 16
       villagers: 32
-      flying-monsters: 48
+      flying-monsters: 32
       wake-up-inactive:
-        animals-max-per-tick: 2
-        animals-every: 4000
-        animals-for: 40
-        monsters-max-per-tick: 4
+        animals-max-per-tick: 4
+        animals-every: 1200
+        animals-for: 100
+        monsters-max-per-tick: 8
         monsters-every: 400
-        monsters-for: 60
+        monsters-for: 100
         villagers-max-per-tick: 4
         villagers-every: 600
         villagers-for: 100
-        flying-monsters-max-per-tick: 2
+        flying-monsters-max-per-tick: 8
         flying-monsters-every: 200
-        flying-monsters-for: 60
+        flying-monsters-for: 100
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true
       tick-inactive-villagers: true
     entity-tracking-range:
-      players: 128
+      players: 48
       animals: 48
       monsters: 48
       misc: 32
-      display: 64
+      display: 128
       other: 64
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 1
+    hopper-amount: 1
+    hopper-can-load-chunks: false
 ```
 
-**paper-global.yml**
+paper-global.yml
 
-```yaml
+```yml
+chunk-loading-basic:
+  player-max-chunk-load-rate: 100.0
+  player-max-chunk-send-rate: 75.0
+chunk-system:
+  io-threads: -1
+  worker-threads: -1
 item-validation:
   book-size:
-    page-max: 1280
+    page-max: 2560
+proxies:
+  proxy-protocol: true
 unsupported-settings:
   allow-headless-pistons: true
   allow-permanent-block-break-exploits: true
@@ -104,155 +115,216 @@ unsupported-settings:
   perform-username-validation: true
 ```
 
-**paper-world-defaults.yml**
+paper-world-defaults.yml
 
-```yaml
-chunks:
-  auto-save-interval: 6000
-  delay-chunk-unloads-by: 10s
-  entity-per-chunk-save-limit:
-    area_effect_cloud: 8
-    arrow: 16
-    dragon_fireball: 3
-    egg: 8
-    ender_pearl: 8
-    experience_bottle: 3
-    experience_orb: 16
-    eye_of_ender: 8
-    fireball: 8
-    firework_rocket: 8
-    llama_spit: 3
-    potion: 8
-    shulker_bullet: 8
-    small_fireball: 8
-    snowball: 8
-    spectral_arrow: 16
-    trident: 16
-    wither_skull: 4
-  max-auto-save-chunks-per-tick: 8
-  prevent-moving-into-unloaded-chunks: true
-collisions:
-  max-entity-collisions: 4
+```yml
 entities:
-  behavior:
-    pillager-patrols:
-      disable: true
-  spawning:
-    creative-arrow-despawn-rate: 400
-    despawn-ranges:
-      ambient: { hard: 54, soft: 32 }
-      axolotls: { hard: 54, soft: 32 }
-      creature: { hard: 54, soft: 32 }
-      misc: { hard: 54, soft: 32 }
-      monster: { hard: 54, soft: 32 }
-      underground_water_creature: { hard: 54, soft: 32 }
-      water_ambient: { hard: 54, soft: 32 }
-      water_creature: { hard: 54, soft: 32 }
-    duplicate-uuid:
-      mode: SAFE_REGEN
-      safe-regen-delete-range: 32
-    iron-golems-can-spawn-in-air: false
-    non-player-arrow-despawn-rate: 400
-    per-player-mob-spawns: true
   spawning:
     alt-item-despawn-rate:
       enabled: true
       items:
-        andesite: 1200
-        cobbled_deepslate: 1200
-        cobblestone: 1200
-        diorite: 1200
-        dirt: 1200
-        granite: 1200
-        gravel: 1200
-        netherrack: 1200
+        andesite: 600
+        beetroot_seeds: 600
+        black_wool: 600
+        blue_wool: 600
+        bone: 600
+        brown_wool: 600
+        carrot: 600
+        cobbled_deepslate: 600
+        cobblestone: 600
+        cyan_wool: 600
+        diorite: 600
+        dirt: 600
         egg: 600
         feather: 600
-        wheat_seeds: 600
-        pumpkin_seeds: 600
+        golden_sword: 600
+        granite: 600
+        gravel: 600
+        gray_wool: 600
+        green_wool: 600
+        gunpowder: 600
+        ink_sac: 600
+        leather: 600
+        light_blue_wool: 600
+        light_gray_wool: 600
+        lime_wool: 600
+        magenta_wool: 600
         melon_seeds: 600
-        beetroot_seeds: 600
-fixes:
-  disable-unloaded-chunk-enderpearl-exploit: true
-  fix-curing-zombie-villager-discount-exploit: true
+        nether_wart: 600
+        netherrack: 600
+        orange_wool: 600
+        pink_wool: 600
+        potato: 600
+        pumpkin_seeds: 600
+        purple_wool: 600
+        red_wool: 600
+        rotten_flesh: 600
+        spider_eye: 600
+        string: 600
+        wheat_seeds: 600
+        white_wool: 600
+        yellow_wool: 600
+    despawn-range-shape: ELLIPSOID
+    despawn-ranges:
+      ambient:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      axolotls:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      creature:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      misc:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      monster:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      underground_water_creature:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      water_ambient:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+      water_creature:
+        hard:
+          horizontal: 56
+          vertical: 128
+        soft: 32
+    per-player-mob-spawns: true
+    duplicate-uuid:
+      mode: SAFE_REGEN
+      safe-regen-delete-range: 32
+    iron-golems-can-spawn-in-air: false
 hopper:
   cooldown-when-full: true
-misc:
-  redstone-implementation: ALTERNATE_CURRENT
-  update-pathfinding-on-block-update: false
-spawn:
-  keep-spawn-loaded: false
 tick-rates:
   behavior:
     villager:
-      validatenearbypoi: -1
+      acquirepoi: 120
+      validatenearbypoi: 60
   container-update: 1
-  grass-spread: 4
-  mob-spawner: 2
+  dry-farmland: 1
+  grass-spread: 8
+  mob-spawner: 4
   sensor:
     villager:
-      secondarypoisensor: 40
-unsupported-settings:
-  fix-invulnerable-end-crystal-exploit: true
+      nearestbedsensor: 80
+      nearestlivingentitysensor: 40
+      playersensor: 40
+      secondarypoisensor: 80
+      villagerbabiessensor: 40
+  wet-farmland: 1
+misc:
+  redstone-implementation: VANILLA
+  update-pathfinding-on-block-update: true
 ```
 
-**world\_nether/paper-world.yml (только АД)**
+Анти-xray Глобально `anti-xray` в `paper-world-defaults.yml` выключен, но включён отдельно по мирам.
 
-```yaml
-spawning:
-  alt-item-despawn-rate:
+Обычный мир (`world/paper-world.yml`):
+
+```yml
+anticheat:
+  anti-xray:
     enabled: true
-    items:
-      golden_sword: 600
-      rotten_flesh: 600
+    engine-mode: 1
+    max-block-height: 320
 ```
 
-***
+Нижний мир (`world_nether/paper-world.yml`):
 
-**Механика спавна и деспавна мобов**\
-Мы используем ванильную механику спавна мобов с одним изменением: **Hard Despawn уменьшен с 128 до 54 блоков**. Это снижает нагрузку и улучшает стабильность.
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    max-block-height: 128
+    hidden-blocks:
+      - ancient_debris
+      - nether_gold_ore
+      - nether_quartz_ore
+```
 
-Как работает спавн мобов:
+Дополнительно для Нижнего мира:
 
-* Красная зона `24–54` блока: зона появления мобов.
-* Зеленая зона `до 24` блоков: мобы не появляются.
-* Цилиндр `до 32` блоков: мобы активны и взаимодействуют с миром.
-* `32–54` блока: мобы тикают медленнее.
-* Дальше `54`: мобы исчезают.
+```yml
+entities:
+  spawning:
+    alt-item-despawn-rate:
+      enabled: true
+      items:
+        golden_sword: 600
+        rotten_flesh: 600
+        netherrack: 600
+```
 
-**Почему фермы из старых версий работают медленнее?**\
-После 1.19 высота мира изменилась (с `Y0–Y265` на `Y-64–Y320`). Игра проверяет больше блоков для спавна, поэтому старые фермы дают меньше мобов.
+DivineMC оптимизации На сервере включён ряд оптимизаций DivineMC:
 
-Решения:
+```yml
+performance:
+  optimizations:
+    disable-method-profiler: true
+    skip-useless-secondary-poi-sensor: true
+    clump-orbs: true
+    enable-suffocation-optimization: true
+    use-compact-bit-storage: true
+    command-block-parse-results-caching: true
+    sheep-optimization: true
+    reduce-chunk-load-and-lookup: true
+    sleeping-block-entity: true
+    equipment-tracking: true
 
-* Стройте фермы на `Y-64`.
-* Очищайте периметр `Y-64` → `Y0`.
-* Учитывайте, что на серверах с `per-player-mob-spawns` эффективность ниже.
+async:
+  pathfinding:
+    enable: true
+    max-threads: 1
+  multithreaded-tracker:
+    enable: true
+    max-threads: 2
+  chunk-sending:
+    enable: true
+    max-threads: 2
+  mob-spawning:
+    enable: true
+    async-natural-spawn: true
+```
 
-Рекомендации:
+Механика спавна и деспавна мобов Сервер использует ванильную механику спавна с изменённым hard despawn. Основные значения сейчас такие:
 
-* Большой периметр вокруг фермы.
-* Эндермен‑фермы — только `Y-64`.
-* Фермы в Нижнем мире — под крышей, чтобы не было лишнего спавна вне платформы.
+* в радиусе до 24 блоков мобы не спавнятся;
+* с 24 блоков начинается зона возможного спавна;
+* soft despawn начинается после 32 блоков;
+* hard despawn настроен как `56 блоков по горизонтали` и `128 по вертикали`;
+* форма деспавна: `ELLIPSOID`.
 
-***
+Что это значит на практике:
 
-Если хочешь, могу сделать второй вариант — более короткий, без механики спавна и сжатый до 1 страницы.
+* мобы рядом с игроком работают почти как обычно;
+* далеко стоящие мобы очищаются быстрее, чем в стандартной ванили;
+* это уменьшает нагрузку при большом онлайне и большом количестве одновременно загруженных территорий.
 
-<figure><img src="https://docs.vanillasquad.com/~gitbook/image?url=https%3A%2F%2F1639357051-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-Md61sIy9355-Dt4QFTm%252Fuploads%252FKQCsirha2UkoCDfR4dLN%252Fimage.png%3Falt%3Dmedia%26token%3Df631d4b6-a2be-4dc9-af7a-3694c6a966a8&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=f8edb0e5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+Почему фермы из старых версий могут работать хуже Начиная с новых версий Minecraft, мир стал выше и глубже, поэтому движок проверяет больше позиций для спавна. Из-за этого старые фермы, особенно построенные высоко или без зачистки окружающих спавн-площадок, работают хуже, чем раньше.
 
-**Почему фермы из старых версий работают медленнее?**
+Рекомендации по фермам:
 
-После обновления до версии 1.19 высота мира изменилась (с Y0–Y265 на Y-64–Y320). Это повлияло на спавн мобов, так как игра теперь проверяет больше блоков для спавна. Фермы, построенные на высоте Y0, стали менее эффективными из-за дополнительных 64 блоков ниже.
-
-**Решения проблемы:**
-
-1. **Перестройте ферму** на высоте Y-64 (самый низкий уровень мира).
-2. **Очистите периметр** от Y-64 до Y0, оставив только воздух.
-3. Примите, что спавн мобов на многопользовательских серверах менее эффективен из-за механики **per-player-mob-spawns**.
-
-**Рекомендации для ферм:**
-
-* **Большой периметр**: очищайте все возможные места спавна вокруг фермы.
-* **Фермы эндерменов**: стройте на Y-64 для максимальной эффективности.
-* **Фермы в Нижнем мире**: располагайте под крышей Нижнего мира, чтобы минимизировать спавн мобов вне платформы.
+* стройте фермы как можно ниже, если механика фермы это позволяет;
+* очищайте доступные точки спавна вокруг;
+* учитывайте, что при `per-player-mob-spawns: true` эффективность зависит от количества игроков рядом и от общего онлайна;
+* фермы в Незере лучше располагать под крышей мира;
+* эндермен-фермы и другие вертикально чувствительные фермы лучше проектировать с учётом новой высоты мира.
