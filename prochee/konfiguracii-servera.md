@@ -21,7 +21,7 @@ icon: desktop
 
 **Ядро сервера**
 
-Мы используем **DivineMC** с конфигурациями **Paper**, **Spigot**, **Bukkit** и **Purpur**. Это даёт хорошую производительность, совместимость с плагинами и гибкую настройку поведения сервера.&#x20;
+Мы используем **Purpur**. Это даёт хорошую производительность, совместимость с плагинами и гибкую настройку поведения сервера.&#x20;
 
 bukkit.yml
 
@@ -235,32 +235,6 @@ misc:
   update-pathfinding-on-block-update: true
 ```
 
-Анти-xray Глобально `anti-xray` в `paper-world-defaults.yml` выключен, но включён отдельно по мирам.
-
-Обычный мир (`world/paper-world.yml`):
-
-```yml
-anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 1
-    max-block-height: 320
-```
-
-Нижний мир (`world_nether/paper-world.yml`):
-
-```yml
-anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 2
-    max-block-height: 128
-    hidden-blocks:
-      - ancient_debris
-      - nether_gold_ore
-      - nether_quartz_ore
-```
-
 Дополнительно для Нижнего мира:
 
 ```yml
@@ -272,37 +246,6 @@ entities:
         golden_sword: 600
         rotten_flesh: 600
         netherrack: 600
-```
-
-DivineMC оптимизации На сервере включён ряд оптимизаций DivineMC:
-
-```yml
-performance:
-  optimizations:
-    disable-method-profiler: true
-    skip-useless-secondary-poi-sensor: true
-    clump-orbs: true
-    enable-suffocation-optimization: true
-    use-compact-bit-storage: true
-    command-block-parse-results-caching: true
-    sheep-optimization: true
-    reduce-chunk-load-and-lookup: true
-    sleeping-block-entity: true
-    equipment-tracking: true
-
-async:
-  pathfinding:
-    enable: true
-    max-threads: 1
-  multithreaded-tracker:
-    enable: true
-    max-threads: 2
-  chunk-sending:
-    enable: true
-    max-threads: 2
-  mob-spawning:
-    enable: true
-    async-natural-spawn: true
 ```
 
 Механика спавна и деспавна мобов Сервер использует ванильную механику спавна с изменённым hard despawn. Основные значения сейчас такие:
